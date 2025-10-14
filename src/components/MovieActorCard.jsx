@@ -2,16 +2,16 @@ export default function MovieActorCard(props) {
 
      const actorsList = props.actors.map((actor) => {
       return (
-        <section>
+        <li>
             {actor} 
-        </section>
+        </li>
         
       )
     })
 
     return (
-        <section>
+        <ul>
             {actorsList}
-        </section>
+        </ul>
     )
 }

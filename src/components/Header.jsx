@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <header>
-            <h1>Movies</h1>
+            <h1>The Movie Database</h1>
         </header>
     )
 }

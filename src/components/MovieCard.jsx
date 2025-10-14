@@ -3,13 +3,12 @@ import MovieDataCard from "./MovieDataCard";
 
 
 export default function MovieCard(props) {
+    
+    const cName = props.musical? "movieCardMusical": "movieCard"
+    
     return (
-        <section className = "mac2">
-            <section className = "mac">
-            <MovieActorCard
-                actors = {props.actors}
-            />
-            <MovieDataCard
+    <section className={cName}>
+            <MovieDataCard className="movieDataCard"
                 key = {props.id}
                 id = {props.id}
                 name = {props.name}
@@ -17,8 +16,10 @@ export default function MovieCard(props) {
                 releaseDate = {props.releaseDate}
                 musical = {props.musical}
             />
-            </section>
+            <MovieActorCard className = "movieActorCard"
+                actors = {props.actors}
+            />
         </section>
-    ) 
+) 
 
 }

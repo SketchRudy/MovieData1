@@ -2,12 +2,12 @@ import Header from './components/Header' ;
 import Footer from './components/Footer';
 import MovieCard from "./components/MovieCard";
 import movies from "./data";
-import MovieDataCard from './components/MovieDataCard';
 
-function App() {
-    const movieData = movies.map((movie) => {
-      return (
-        <MovieCard
+export default function App() {
+  
+  const movieData = movies.map((movie) => {
+    return (
+      <MovieCard 
         key = {movie.id}
         id = {movie.id}
         name = {movie.name}
@@ -15,18 +15,17 @@ function App() {
         actors = {movie.actors}
         releaseDate = {movie.releaseDate}
         musical = {movie.musical}
-        />
-      )
-    })
+      />
+    )
+  })
 
-    return (
-      <section>
-      <Header/>
-      {movieData}
-      <Footer/>
-      </section>
-      )
-    }
-
-
-export default App
+  return (
+    <>
+      <Header />
+      <main>
+         {movieData}
+      </main>
+      <Footer />
+    </>
+  )
+}

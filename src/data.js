@@ -4,7 +4,6 @@ const movies = [
     name: "La La Land",
     genre: "Romance",
     actors: ["Ryan Gosling", "Emma Stone"],
-    
     releaseDate: new Date("2016-12-09"),
     musical: true
   },

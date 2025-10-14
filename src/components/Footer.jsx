@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer>
-            <p>Copyright 2025</p>
+            <p>&copy; 2025  Rudolf & Matthew</p>
         </footer>
     )
 }

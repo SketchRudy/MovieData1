@@ -1,16 +1,52 @@
+
+
 body {
-  background-color: beige;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.mac2 {
-  display: flex;
-  justify-content: space-evenly
-}
+
 header {
   width: 100%;
+  text-align: center;
+  background-color: #0b0b81;
+  color: whitesmoke;
+  padding: 2px;
+  margin-bottom: 30px;
+  border: 2px solid black;
 }
 
-.mac {
+main{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.movieCard {
+  border: 4px solid black;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 10px;
+  width: 350px;
+}
+
+.movieCardMusical {
+  border: 4px solid black;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 10px;
+  width: 350px;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  background-color: #0b0b81;
+  color: whitesmoke;
+  padding: 2px;
   border: 2px solid black;
-  padding: 5px;
 }
